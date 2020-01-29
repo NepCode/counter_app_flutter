@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class Homepage extends StatelessWidget{
 
   final styleText = new TextStyle( fontSize: 25);
+  final counter = 10;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class Homepage extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('number of clicks:', style: styleText),
-            Text('0', style: styleText),
+            Text('$counter', style: styleText),
           ],
         ),
       ),
